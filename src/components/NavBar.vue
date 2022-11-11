@@ -41,7 +41,7 @@ export default {
 }
 
 #nav a{
-    color: darkolivegreen;
+    color: #fcba03;;
     text-decoration: none;
     margin: 12px;
     transition: .5s;

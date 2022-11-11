@@ -3,7 +3,7 @@
   <div class="main-container">
 
   <h1>Monte o seu Burger:</h1>
-  <p>formulário</p>
+  <BurgerForm />
 
 
 
@@ -13,11 +13,16 @@
 </template>
 
 <script>
-import BannerComp from "../components/BannerComp.vue"
+import BannerComp from "../components/BannerComp.vue";
+import BurgerForm from "../components/BurgerForm.vue";
+
 
 export default {
   components:{
-    BannerComp
+    BannerComp,
+    BurgerForm
+
+
   }
 
   }
