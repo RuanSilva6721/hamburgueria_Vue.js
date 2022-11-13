@@ -66,16 +66,16 @@
 
         },
         async createBurger(e){
-          e.preventDefault();
+          e.preventDefault()
           const data = {
             nome: this.nome,
             carne: this.carne,
             pao: this.pao,
             opcionais: Array.from(this.opcionais),
-            status: "Solicitado",
+            status: "Solicitado"
 
           }
-          const dataJson = JSON.stringify();
+          const dataJson = JSON.stringify(data)
 
           const req = await fetch("http://localhost:3000/burgers",{
             method: "POST",
@@ -83,7 +83,7 @@
             body: dataJson
           });
 
-          const res = await req.json();
+          const res = await req.json()
 
     // clear message
      // setTimeout(() => this.msg = "", 3000)
