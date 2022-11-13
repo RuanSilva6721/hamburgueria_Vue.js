@@ -79,32 +79,6 @@
   ],
   "burgers": [
     {
-      "nome": "Matheus Battisti",
-      "carne": "Picanha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon",
-        "Salame",
-        "Cebola roxa"
-      ],
-      "status": "Finalizado",
-      "id": 1
-    },
-    {
-      "nome": "João Coelho",
-      "carne": "Maminha",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Salame",
-        "Cebola roxa"
-      ],
-      "status": "Solicitado",
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
       "nome": "Ruan Felipe",
       "carne": "Picanha",
       "pao": "Italiano Branco",
@@ -124,48 +98,6 @@
       ],
       "status": "Solicitado",
       "id": 7
-    },
-    {
-      "nome": "maria",
-      "carne": "Picanha",
-      "pao": "Integral",
-      "opcionais": [
-        "Cheddar",
-        "Tomate"
-      ],
-      "status": "Solicitado",
-      "id": 8
-    },
-    {
-      "nome": "sasasat",
-      "carne": "Alcatra",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Tomate",
-        "Pepino"
-      ],
-      "status": "Solicitado",
-      "id": 9
-    },
-    {
-      "nome": "ewew",
-      "carne": "Picanha",
-      "pao": "Parmesão e Orégano",
-      "opcionais": [
-        "Bacon"
-      ],
-      "status": "Solicitado",
-      "id": 10
-    },
-    {
-      "nome": "ewew",
-      "carne": "Picanha",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Cheddar"
-      ],
-      "status": "Solicitado",
-      "id": 11
     }
   ]
 }

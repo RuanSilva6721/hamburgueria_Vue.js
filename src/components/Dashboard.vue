@@ -70,13 +70,27 @@ export default {
         },
 
         async deleteBurger(id){
-           const req = await fetch(`http://localhost:3000/burgues/${id}`,{
-            method: "DELETE"
-           })
+            const req = await fetch(`http://localhost:3000/burgers/${id}`, {
+          method: "DELETE"
+        });
+        const res = await req.json()
+        this.getPedidos()
+        },
+        async updateBurger(event, id){
+            const option = event.target.value
 
-           const res = await req.json();
+            const dataJson = JSON.stringify({ ststus: option})
 
-           this.getPedidos();
+            const req = await fetch(`htpp://localhost:3000/burgers/${id}`,{
+                method: "PATCH",
+                headers: {"Content-Type": "application/json"},
+                body: dataJson
+            })
+
+            const res = await req.json();
+
+            console.log(res);
+
         }
     },
     mounted(){
