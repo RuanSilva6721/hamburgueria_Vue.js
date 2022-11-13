@@ -74,24 +74,32 @@ export default {
           method: "DELETE"
         });
         const res = await req.json()
+
+        this.msg = `Pedido Nº ${res.id} removido com sucesso!`
+
+            // clear message
+            setTimeout(() => this.msg = "", 3000)
+
         this.getPedidos()
         },
-        async updateBurger(event, id){
-            const option = event.target.value
-
-            const dataJson = JSON.stringify({ ststus: option})
-
-            const req = await fetch(`htpp://localhost:3000/burgers/${id}`,{
+        async updateBurger(event, id) {
+                const option = event.target.value;
+                const dataJson = JSON.stringify({status: option});
+                const req = await fetch(`http://localhost:3000/burgers/${id}`, {
                 method: "PATCH",
-                headers: {"Content-Type": "application/json"},
+                headers: { "Content-Type" : "application/json" },
                 body: dataJson
-            })
+                })
+                const res = await req.json()
+                
+                this.msg = `Pedido Nº ${res.id} atualizado com sucesso!`
+                // clear message
+                setTimeout(() => this.msg = "", 3000)
 
-            const res = await req.json();
 
-            console.log(res);
-
-        }
+                console.log(res)
+                
+      }
     },
     mounted(){
         this.getPedidos()

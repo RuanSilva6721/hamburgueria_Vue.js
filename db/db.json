@@ -79,25 +79,15 @@
   ],
   "burgers": [
     {
-      "nome": "Ruan Felipe",
-      "carne": "Picanha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon",
-        "Salame"
-      ],
-      "status": "Solicitado",
-      "id": 6
-    },
-    {
-      "nome": "ALUIZIO MATOS DOS REIS",
-      "carne": "Alcatra",
+      "nome": "sasasat",
+      "carne": "Maminha",
       "pao": "3 Queijos",
       "opcionais": [
-        "Cebola roxa"
+        "Salame",
+        "Bacon"
       ],
-      "status": "Solicitado",
-      "id": 7
+      "status": "Finalizado",
+      "id": 1
     }
   ]
 }
